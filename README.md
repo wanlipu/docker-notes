@@ -5,16 +5,21 @@ Here is a youtube Docker Introduction: [link](https://youtu.be/VlSW-tztsvM)
 ## After finishing install docker for Ubuntu
 Inside of terminal, to show existing docker images
 ```
-~$ docker images 
+$ docker images 
 ```
 To run docker container
 ```
-~$ docker run busybox:1.24 # optional echo "hello world"
+$ docker run busybox:1.24 # optional echo "hello world"
 ```
 To run interactive docker container
 ```
-~$ docker run -i -t busybox:1.24
+$ docker run -i -t busybox:1.24
 ```
+to show existing docker containers
+```
+$ docker container ls -a
+```
+[How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/)
 
 
 

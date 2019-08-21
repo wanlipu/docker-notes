@@ -24,6 +24,8 @@ $ docker container ls -a
 
 [VS Code Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
 
+[Working with Docker](https://code.visualstudio.com/docs/azure/docker)
+
 
 
 [docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)

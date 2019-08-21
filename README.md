@@ -22,6 +22,9 @@ $ docker container ls -a
 [How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/)
 
 
+[VS Code Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
+
+
 
 [docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
 ```

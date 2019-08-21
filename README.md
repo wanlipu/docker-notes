@@ -22,9 +22,11 @@ $ docker container ls -a
 [How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/)
 
 
-[VS Code Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
+[vscode Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
 
-[Working with Docker](https://code.visualstudio.com/docs/azure/docker)
+[vscode Working with Docker](https://code.visualstudio.com/docs/azure/docker)
+
+[Run docker image with vscode](https://github.com/cmiles74/docker-vscode)
 
 
 

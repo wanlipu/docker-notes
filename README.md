@@ -61,7 +61,7 @@ $ code . # to open current directory in vscode
 * git version
 ```
 $ git --version
-
+```
 
 ## [bintrees](https://pypi.org/project/bintrees/)
 Installation

@@ -63,6 +63,17 @@ $ code . # to open current directory in vscode
 $ git --version
 ```
 
+## Bind Mounting
+* Maps a host file or directory to a container file or directory
+* Basically just two locations pointing to the same file(s)
+* Again, skips UFS, and host files overwrite any in container
+* Can't use in Dockerfile, must be at container run
+```
+$ ... run -v /Users/wanli/stuff:/path/container (mac/linus)
+$ ... run -v //c/Users/wanli/stuff:/path/container (windows)
+```
+
+
 ## [bintrees](https://pypi.org/project/bintrees/)
 Installation
 ```

@@ -1,6 +1,7 @@
 # Docker Notes
 
 Here is a youtube Docker Introduction: [link](https://youtu.be/VlSW-tztsvM)
+Here is another Udemy vidoe: [link](https://www.udemy.com/docker-mastery/learn/lecture/7742916#overview)
 
 ## After finishing install docker for Ubuntu
 Inside of terminal, to show existing docker images
@@ -42,41 +43,24 @@ Here is a link for Markdown Guides on GitHub platform
 
 
 
-## Command Prompt Window
-If you have installed multiple python environments in your system
-* type "where python" in prompt window to find out all installed python environments in your system
+## Git
+* install git
 ```
-$ where python
+$ sudo apt install git
 ```
-
-Find current python path from prompt window
-* type "python -m site" to print sys.path
+* git version
 ```
-$ python -m site
-```
-* or get into python interpreter from prompt window, then import sys, then print sys.path
-
-Find current python version from prompt window
-* type "python --version" to print python versoin
-```
-$ python --version
+$ git --version
 ```
 
-Find all installed python packages
-* type "pip list" or "conda list"
+## vscode with docker extension
+* in terminal
 ```
-$ pip list
-$ conda list
+$ code . # to open current directory in vscode
 ```
-
-## Install Packages 
-You can find lots of Windows Binaries for Python Extension Packages in the following link:
-- [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost)
-
-Xgboost
-- Requires the [Microsoft Visual C++ Redistributable for Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/). 
-- Download Xgboost binaries from [Unofficial Windows Binaries for Python Extension Packages](https://www.lfd.uci.edu/~gohlke/pythonlibs/#xgboost)
-- pip install the downloaded whl file
+* git version
+```
+$ git --version
 
 
 ## [bintrees](https://pypi.org/project/bintrees/)

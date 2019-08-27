@@ -83,6 +83,19 @@ docker run -it --privileged=true \
   /bin/bash
  ```
 
+## Homework 1 Environment
+Use the provided .yml file to create a new conda environment 
+```
+$ conda env create -f environment.yml
+```
+Active the conda version
+```
+$ source activate homework1
+```
+Deactive the conda version
+```
+$ source deactivate
+```
 
 ## [bintrees](https://pypi.org/project/bintrees/)
 Installation

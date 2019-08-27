@@ -1,7 +1,16 @@
 # Docker Notes
 
-Here is a youtube Docker Introduction: [link](https://youtu.be/VlSW-tztsvM)
+Here is a youtube Docker Introduction: [link](https://youtu.be/VlSW-tztsvM) \
 Here is another Udemy vidoe: [link](https://www.udemy.com/docker-mastery/learn/lecture/7742916#overview)
+
+## CSE6250 LAB
+Please the instructions in the [lab section](http://www.sunlab.org/teaching/cse6250/fall2019/env/) to install docker and run docker containers
+
+After installing docker for Ubuntu, you may run into [docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
+you can use following command to address the issue
+```
+sudo chmod 666 /var/run/docker.sock
+```
 
 ## After finishing install docker for Ubuntu
 Inside of terminal, to show existing docker images
@@ -31,10 +40,7 @@ $ docker container ls -a
 
 
 
-[docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
-```
-sudo chmod 666 /var/run/docker.sock
-```
+
 
 Here is a link for Markdown Guides on GitHub platform
 * [Markdown Guides](https://guides.github.com/features/mastering-markdown/)

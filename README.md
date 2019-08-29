@@ -50,6 +50,8 @@ Here is a link for Markdown Guides on GitHub platform
 
 
 ## Git
+[instructions](https://linuxize.com/post/how-to-install-git-on-ubuntu-18-04/)
+
 * install git
 ```
 $ sudo apt install git
@@ -67,6 +69,11 @@ $ code . # to open current directory in vscode
 * git version
 ```
 $ git --version
+```
+Config git 
+```
+$ git config --global user.name "Your Name"
+$ git config --global user.email "youremail@yourdomain.com"
 ```
 
 ## Bind Mounting

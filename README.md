@@ -11,6 +11,7 @@ you can use following command to address the issue
 ```
 sudo chmod 666 /var/run/docker.sock
 ```
+The same command should be run to start your docker service every time after restarting your computer. 
 
 ## After finishing install docker for Ubuntu
 Inside of terminal, to show existing docker images

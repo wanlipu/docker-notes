@@ -145,6 +145,17 @@ Similar to creating local directory via linux command mkdir, creating a folder n
 ```
 > hdfs dfs -mkdir input
 ```
+or
+```
+> hdfs dfs -mkdir input/events
+```
+to list hdfs files
+```
+> hdfs dfs -ls input
+> hdfs dfs -ls input/events
+```
+
+
 Suppose you followed previous instructions and created an directory named input, you can then copy data from local file system to HDFS using -put. For example,
 ```
 > cd /bigdata-bootcamp/data

@@ -137,8 +137,9 @@ First, you will need to switch to the hdfs user via
 ```
 Then, you can create a directory and change ownership of the newly created folder
 ```
-> hdfs dfs -mkdir -p /user/<username>
-> hdfs dfs -chown <username> /user/<username>
+> hdfs dfs -mkdir -p /user/<username> # username is root
+> hdfs dfs -chown <username> /user/<username> # username is root
+> exit
 ```
 Similar to creating local directory via linux command mkdir, creating a folder named input in HDFS use
 ```

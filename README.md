@@ -63,6 +63,11 @@ $ docker attach <CONTAINER ID or NAME>
 ```
 Every time you restart your container, you are supposed to start all those services again before any HDFS related operations.
 
+## Start all necessary services
+```
+# /scripts/start-services.sh
+```
+
 
 ## Git
 [instructions](https://linuxize.com/post/how-to-install-git-on-ubuntu-18-04/)
@@ -125,15 +130,29 @@ Deactive the conda version
 $ source deactivate
 ```
 
-## [bintrees](https://pypi.org/project/bintrees/)
-Installation
+## HDFS Operations
+First, you will need to switch to the hdfs user via
 ```
-pip install bintrees
+# sudo su - hdfs
 ```
-[Outdated binary tree package, please switch to sortedcontainers](https://github.com/mozman/bintrees)\
-The sortedcontainers module is the best-in-class module for sorted sets and sorted dictionaries.
-
-
+Then, you can create a directory and change ownership of the newly created folder
+```
+> hdfs dfs -mkdir -p /user/<username>
+> hdfs dfs -chown <username> /user/<username>
+```
+Similar to creating local directory via linux command mkdir, creating a folder named input in HDFS use
+```
+> hdfs dfs -mkdir input
+```
+Suppose you followed previous instructions and created an directory named input, you can then copy data from local file system to HDFS using -put. For example,
+```
+> cd /bigdata-bootcamp/data
+> hdfs dfs -put case.csv input
+> hdfs dfs -put control.csv input
+```
+```
+> hdfs dfs -put /mnt/host/Users/{USERNAME}/path/to/file /input/events
+```
 
 ## FLASK
 Please go to [cs50 link](https://docs.cs50.net/web/2019/x/projects/1/project1.html) for instructions.

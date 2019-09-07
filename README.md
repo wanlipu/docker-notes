@@ -48,6 +48,20 @@ Here is a link for Markdown Guides on GitHub platform
 * [Another Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
+## When you want to restart your existing container
+check existing containers info
+```
+$ docker ps -a
+```
+To start a container again
+```
+$ docker start <CONTAINER ID or NAME>
+```
+Then attach it by
+```
+$ docker attach <CONTAINER ID or NAME>
+```
+Every time you restart your container, you are supposed to start all those services again before any HDFS related operations.
 
 
 ## Git

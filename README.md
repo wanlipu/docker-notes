@@ -169,6 +169,10 @@ Suppose you followed previous instructions and created an directory named input,
 > hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/events.csv input/events
 > hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/mortality.csv input/mortality
 ```
+to remove files from hdfs
+```
+> hdfs dfs -rm -R /path/to/HDFS/file
+```
 
 
 ## FLASK

@@ -167,8 +167,9 @@ Suppose you followed previous instructions and created an directory named input,
 ```
 ```
 > hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/events.csv input/events
-> hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/mortality.csv input/events
+> hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/mortality.csv input/mortality
 ```
+
 
 ## FLASK
 Please go to [cs50 link](https://docs.cs50.net/web/2019/x/projects/1/project1.html) for instructions.

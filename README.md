@@ -147,7 +147,12 @@ Similar to creating local directory via linux command mkdir, creating a folder n
 ```
 or
 ```
-> hdfs dfs -mkdir input/events
+> hdfs dfs -mkdir -p /input/events
+> hdfs dfs -mkdir -p /input/mortality
+```
+and
+```
+> hdfs dfs -chown -R root /input
 ```
 to list hdfs files
 ```
@@ -166,8 +171,8 @@ Suppose you followed previous instructions and created an directory named input,
 > hdfs dfs -put /mnt/host/Users/{USERNAME}/path/to/file /input/events
 ```
 ```
-> hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/events.csv input/events
-> hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/mortality.csv input/mortality
+> hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/events.csv /input/events
+> hdfs dfs -put /mnt/host/home/wanli/cse6250/bigdata4health/homework2/data/mortality.csv /input/mortality
 ```
 to remove files from hdfs
 ```

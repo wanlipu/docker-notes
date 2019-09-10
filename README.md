@@ -180,40 +180,11 @@ to remove files from hdfs
 ```
 
 
-## FLASK
-Please go to [cs50 link](https://docs.cs50.net/web/2019/x/projects/1/project1.html) for instructions.
-
+## Run Hive scripts
 ```
-set FLASK_APP=application.py
-set set DATABASE_URL=postgres://*** (from your heruku database url)
-set FLASK_DEBUG=1 (to reload web application whenever you save a change to a file)
-python -m flask run (sometime 'flask run' won't work, use 'python -m flask run' instead)
+hive -f sample.hql
 ```
-## MongoDB
-Please go to [MongoDB Ebook](https://mongodb.tecladocode.com/) for instructions.\
-Show Databases (cmd)
+## Run Pig scripts
 ```
-show dbs
+pig -x local sample.pig
 ```
-Checkout/switch to database (cmd)
-```
-use database_name(*)
-```
-Show current database (cmd)
-```
-db
-```
-Show Collections in current database (cmd)
-```
-show collections
-```
-Query certain collection in current database (cmd)
-```
-db.posts.find({}).pretty() (replace posts with other collection name)
-```
-Remove instances in collections with query
-```
-db.posts.remove({}) (replace posts with other collection name)
-```
-## Draw Pretty Neural Network Sketch
-[link](http://alexlenail.me/NN-SVG/index.html)

@@ -185,6 +185,7 @@ to remove files from hdfs
 hive -f sample.hql
 ```
 ## Run Pig scripts
+[Pig tutorials](https://www.tutorialspoint.com/apache_pig/index.htm)
 ```
 pig -x local sample.pig
 ```

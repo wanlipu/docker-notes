@@ -38,12 +38,13 @@ $ docker run -it --privileged=true \
 $ docker run -i -t busybox:1.24
 ```
 ## To restart docker container (old containers)
-to show existing docker containers
+first to show existing docker containers
 ```
 $ docker container ls -a
 ```
+then restart a specific container by ID or NAME (don't need to use full ID, just first a few symbols)
 ```
-docker start <CONTAINER ID or NAME> # you don't need to type the full ID of the container, just first a few symbols
+$ docker start <CONTAINER ID or NAME> 
 ```
 
 [How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/)

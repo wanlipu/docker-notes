@@ -42,9 +42,17 @@ first to show existing docker containers
 ```
 $ docker container ls -a
 ```
+or
+```
+$ docker ps -a
+```
 then restart a specific container by ID or NAME (don't need to use full ID, just first a few symbols)
 ```
 $ docker start <CONTAINER ID or NAME> 
+```
+Then attach it by
+```
+$ docker attach <CONTAINER ID or NAME>
 ```
 
 [How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/)
@@ -56,29 +64,12 @@ $ docker start <CONTAINER ID or NAME>
 [Run docker image with vscode](https://github.com/cmiles74/docker-vscode)
 
 
-
-
-
 Here is a link for Markdown Guides on GitHub platform
 * [Markdown Guides](https://guides.github.com/features/mastering-markdown/)
 * [Another Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 
-## When you want to restart your existing container
-check existing containers info
-```
-$ docker ps -a
-```
-To start a container again
-```
-$ docker start <CONTAINER ID or NAME>
-```
-Then attach it by
-```
-$ docker attach <CONTAINER ID or NAME>
-```
-Every time you restart your container, you are supposed to start all those services again before any HDFS related operations.
-
+## Every time you restart your container, you are supposed to start all those services again before any HDFS related operations.
 ## Start all necessary services
 ```
 # /scripts/start-services.sh

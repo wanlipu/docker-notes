@@ -6,36 +6,47 @@ Here is another Udemy vidoe: [link](https://www.udemy.com/docker-mastery/learn/l
 ## CSE6250 LAB
 Please the instructions in the [lab section](http://www.sunlab.org/teaching/cse6250/fall2019/env/) to install docker and run docker containers
 
-
-
 ## After finishing install docker for Ubuntu
 After installing docker for Ubuntu, you may run into [docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
 you can use following command to address the issue
 The same command should be run to start your docker service every time after restarting your computer. 
 ```
-sudo chmod 666 /var/run/docker.sock
+$ sudo chmod 666 /var/run/docker.sock
 ```
 
 
-
+## Running Docker Containers
 Inside of terminal, to show existing docker images
 ```
 $ docker images 
 ```
-To run docker container
+### To run docker container (First Time)
 ```
 $ docker run busybox:1.24 # optional echo "hello world"
 ```
-To run interactive docker container
+```
+$ docker run -it --privileged=true \
+  --cap-add=SYS_ADMIN \
+  -m 8192m -h bootcamp.local \
+  --name bigbox -p 2222:22 -p 9530:9530 -p 8888:8888\
+  -v /:/mnt/host \
+  sunlab/bigbox:latest \
+  /bin/bash
+```
+### To run interactive docker container
 ```
 $ docker run -i -t busybox:1.24
 ```
+## To restart docker container (old containers)
 to show existing docker containers
 ```
 $ docker container ls -a
 ```
-[How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/)
+```
+docker start <CONTAINER ID or NAME> # you don't need to type the full ID of the container, just first a few symbols
+```
 
+[How To Remove Docker Containers, Images, Volumes, and Networks](https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/)
 
 [vscode Developing inside a Container](https://code.visualstudio.com/docs/remote/containers)
 

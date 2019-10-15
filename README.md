@@ -7,6 +7,11 @@ Here is another Udemy vidoe: [link](https://www.udemy.com/docker-mastery/learn/l
 Please the instructions in the [lab section](http://www.sunlab.org/teaching/cse6250/fall2019/env/) to install docker and run docker containers
 
 ## After finishing install docker for Ubuntu
+Inside of terminal, to show existing docker images
+```
+$ docker images 
+```
+However, you may run into the following issue \
 After installing docker for Ubuntu, you may run into [docker: Got permission denied issue](https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue)
 you can use following command to address the issue
 The same command should be run to start your docker service every time after restarting your computer. 

@@ -205,6 +205,7 @@ pig -x local sample.pig
 
 ## From Nana
 - install docker `sudo apt install docker.io`, possibly need `sudo apt-get update` first
+  - https://www.youtube.com/watch?v=wH9XesmPUOk
 - run `sudo dockerd`
   - https://stackoverflow.com/questions/44678725/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock-is-the-docker
 - open a new tab in wsl2, and run `sudo docker run postgres:9.6`

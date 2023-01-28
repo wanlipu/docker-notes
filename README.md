@@ -201,3 +201,7 @@ hive -f sample.hql
 ```
 pig -x local sample.pig
 ```
+
+
+## From Nana
+- install docker `sudo apt install docker.io`, possibly need `sudo apt-get update` first

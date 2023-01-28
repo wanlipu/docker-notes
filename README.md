@@ -206,3 +206,4 @@ pig -x local sample.pig
 ## From Nana
 - install docker `sudo apt install docker.io`, possibly need `sudo apt-get update` first
 - run `sudo dockerd`
+  - https://stackoverflow.com/questions/44678725/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock-is-the-docker

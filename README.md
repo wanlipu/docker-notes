@@ -210,3 +210,4 @@ pig -x local sample.pig
 - open a new tab in wsl2, and run `sudo docker run postgres:9.6`
   - images downloaded but can't be run due to not password setup
 -  `sudo docker run -e POSTGRES_PASSWORD=password postgres:9.6`
+- open a new tab in wsl2, and run `sudo docker ps` to show the list of docker containers
